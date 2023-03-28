@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(73, 73, 73);
 }
 
 .nav-conti { 
@@ -30,13 +31,13 @@
 
 .a-nav-links {
   text-decoration-line: none;
-  font-size: 26px;
+  font-size: 22px;
+  color: bisque;
   
 }
 
 .nav-rechts {
   list-style-type: none;
-  border: 2px groove black;
   display: block;
   margin: 0;
   padding: 0; 
@@ -51,6 +52,7 @@
 }
 
 .a-nav-rechts {
-  font-size: 26px;
+  font-size: 22px;
+  color: bisque;
   text-decoration-line: none;
 }

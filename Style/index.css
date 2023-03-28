@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-conti { 
+  display: block;
+ 
+
+}
+
+.nav-links {
+  float: left;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em;
+  padding: 0;
+  width: 30em;
+  
+}
+
+.nav-list.links {
+  display: block;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.a-nav-links {
+  text-decoration-line: none;
+  font-size: 26px;
+  
+}
+
+.nav-rechts {
+  list-style-type: none;
+  border: 2px groove black;
+  display: block;
+  margin: 0;
+  padding: 0; 
+  
+}
+
+.nav-list-rechts {
+  display: block;
+  margin: 1.5em;
+  padding: 0;
+  float: right;  
+}
+
+.a-nav-rechts {
+  font-size: 26px;
+  text-decoration-line: none;
+}

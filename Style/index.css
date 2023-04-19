@@ -1,58 +1,178 @@
+:root {
+  --backround-color: #414141;
+  --text-color: #fff8f8;
+  --item-color: #e40808;
+  --hover-color: #da5417;
+  --navbar-height: 60px;
+}
+
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(73, 73, 73);
+  font-size: 24px;
+  font-family: 'Amatic SC', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
 }
 
-.nav-conti { 
-  display: block;
- 
-
+html {
+  height: 100%;
 }
 
-.nav-links {
-  float: left;
-  list-style-type: none;
+body {
+  height: 100%;
+  background-image: url(./Diablo-IV-Castle-Wallpaper.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  height: var(--navbar-height);
+  background-color: var(--backround-color);
   display: flex;
   justify-content: space-between;
-  margin: 1.5em;
-  padding: 0;
-  width: 30em;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgb(29, 27, 27);
+  position: fixed;
+  width: 100%;
+}
+
+.logo-conti img {
+  margin-left: 20px;
+ 
+  
+
+}
+
+.logo-conti a {
+  font-family: 'Amatic SC', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--item-color);
+  text-decoration: none;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
   
 }
 
-.nav-list.links {
+nav li {
+  height: 100%;
+  width: 150px;
+  text-align: center;
+  position: relative;
+}
+
+nav li:hover {
+  background-color: var(--item-color);
+  transition: 0.4s;
   display: block;
-  margin: 0;
-  padding: 0;
+}
+
+nav ul a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.dropdown {
+  height: min-content;
+  width: 150px;
+  background-color: var(--backround-color);
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  box-shadow: 3px 3px 3px rgb(29, 27, 27);
+  z-index: 2;
   
 }
 
-.a-nav-links {
-  text-decoration-line: none;
-  font-size: 22px;
-  color: bisque;
+.dropdown li {
+  height: 50px;
+  width: 100%;
+}
+
+.dropdown li a {
+  justify-content: flex-start;
+  padding-left: 15px;
+  width: calc(100% - 15px);
+}
+
+nav li:hover .dropdown {
+  display: flex;
+}
+
+
+
+#home_checkbox,
+#products_checkbox,
+#login_checkbox {
+  display: none;
+}
+
+.expandable-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 
-.nav-rechts {
-  list-style-type: none;
-  display: block;
-  margin: 0;
-  padding: 0; 
+
+.main-div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  
+  gap: 10px;
+  height: 90vh;
+  width: 60%;
+  margin-top: 80px;
+  /* background-color: #faf6f63b; */
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  z-index: 0;
+  border-top: 1px groove black;
+  border-left:  1px groove black;
+  box-shadow: 3px 3px 3px black;
   
 }
 
-.nav-list-rechts {
-  display: block;
-  margin: 1.5em;
-  padding: 0;
-  float: right;  
+h2 {
+  margin: 30px;
 }
 
-.a-nav-rechts {
-  font-size: 22px;
-  color: bisque;
-  text-decoration-line: none;
+.diablo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+}
+
+.diablo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
 }

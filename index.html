@@ -4,34 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ProjectX</title>
   <link rel="stylesheet" href="./Style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-      <header>
-        <div class="nav-conti">
-          <nav>
-            <ul class="nav-links">
-              <li class="nav-list-links"><a class="a-nav-links" href="">Home</a></li>
-              <li class="nav-list-links"><a class="a-nav-links" href="">Angebote</a></li>
-              <li class="nav-list-links"><a class="a-nav-links" href="">Items</a></li>
-              <li class="nav-list-links"><a class="a-nav-links" href="">Endecke</a></li>
+    <header>
+        <nav>
+          <div class="logo-conti">
+            <img src="./Style/icons8-battle-net-48.png" width="30px" alt="">
+          <a class="logo" href="#">ProjectX</a>
+          </div>
+          <ul>
+            <li class="expandable-li"><input type="checkbox" id="home_checkbox"><label for="home_checkbox">Home</label>
+            <ul class="home-dropdown dropdown">
+            <li><a href="#">Selection</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">About us</a></li>
             </ul>
-            <ul class="nav-rechts">
-              <li class="nav-list-rechts"><a class="a-nav-rechts" href="">Warenkorb</a></li>
-              <li class="nav-list-rechts"><a class="a-nav-rechts" href="">Login</a></li>
-            </ul>
-          </nav>
-        </div>
-        
-      </header>
+           </li>
+
+            <li class="expandable-li"><input type="checkbox" id="products_checkbox"><label for="checkbox">Products</label>
+              <ul class="products-dropdown dropdown">
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Purchase</a></li>
+                <li><a href="#">About us</a></li>
+                </ul>
+            </li>
+
+            <li class="expandable-li"><input type="checkbox" id="login_checkbox"><label for="checkbox">Login</label>
+              <ul class="login-dropdown dropdown">
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Sign-in</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+    </header>
     <main>
-
+      <div class="main-container">
+      <div class="main-div">
+        <div class="diablo1">
+          <h2>Diablo Lorem1</h2>
+        </div>
+        <div class="diablo2">
+          <h2>Diablo Lorem2</h2>
+        </div>
+      </div>
+    </div>
     </main>
-    <footer>
-
-    </footer>
-
   
 </body>
 </html>

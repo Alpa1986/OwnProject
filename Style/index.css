@@ -22,7 +22,8 @@ html {
 }
 
 body {
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url(./d4jpeg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,7 +97,7 @@ nav ul a {
   left: 0;
   top: 60px;
   box-shadow: 3px 3px 3px rgb(29, 27, 27);
-  z-index: 2;
+  
   
 }
 
@@ -133,28 +134,39 @@ nav li:hover .dropdown {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
+}
+
+.main-container img {
+    width: 100%;
+    height: auto;
+    display: block;
   
 }
 
 
 .main-div {
   display: grid;
-  justify-content: space-between;
-  align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 300px 300px 300px 300px 300px;
   gap: 10px;
+  justify-content: center;
+  flex-direction: column;
   height: 90vh;
   width: 60%;
+  padding: 5px 10px;
   margin-top: 80px;
-  background-color: #74707048;
-  backdrop-filter: blur(2px);
+  background-color: #7470701e;
+  backdrop-filter: blur(1px);
   border-radius: 20px;
-  z-index: 0;
   border-top: 1px groove black;
   border-left:  1px groove black;
   box-shadow: 3px 3px 3px black;
+  
+}
+
+.main-div p{
+  display: block;
   
 }
 
@@ -165,86 +177,78 @@ h2 {
 }
 
 .barbar {
+  margin: 1em 3em ;
   display: flex;
-  flex-direction: column;
+  text-align: left;
+  width: 90%;
+  height: 300px;
+  flex-direction: row;
   justify-content: flex-start;
   grid-column: 1 / span 2;
-  /* align-items: left; */
-  text-align: center;
+  /* border: 2px var(--hover-color) groove; */
+  
 }
 
-.barbar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  float: right;
-  border: 2px var(--text-color) groove;
-}
+
+
+
 
 .sorceress {
+  margin: 1em 3em ;
   display: flex;
-  flex-direction: column;
+  text-align: left;
+  width: 90%;
+  height: 300px;
+  flex-direction: row;
   justify-content: flex-start;
-  grid-column: 3 / span 5;
-  align-items: left;
-  text-align: center;
+  grid-column: 1 / span 2;
   
 }
 
-.sorceress img {
-  width: 100%;
-  height: 90%;
-  object-fit: cover;
-  border: 2px var(--text-color) groove;
-}
+
 
 .druid {
+  margin: 1em 3em ;
   display: flex;
-  flex-direction: column;
+  text-align: left;
+  width: 80%;
+  height: 300px;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  text-align: justify;
-  
+  grid-column: 2 / span 2;
 }
 
-.druid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  float: right;
-  border: 2px var(--text-color) groove;
-}
+
 
 .necromancer {
+  margin: 1em 3em ;
   display: flex;
-  flex-direction: column;
+  text-align: left;
+  width: 80%;
+  height: 300px;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  text-align: justify;
-  
+  grid-column: 1 / span 2;
 }
 
-.necromancer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  float: right;
-  border: 2px var(--text-color) groove;
-}
+
 
 .rogue {
+  margin: 1em 3em ;
   display: flex;
-  flex-direction: column;
+  text-align: left;
+  width: 80%;
+  height: 300px;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  text-align: justify;
-  
+  grid-column: 1 / span 2;
 }
 
-.rogue img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  float: right;
-  border: 2px var(--text-color) groove;
+
+
+.three-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+

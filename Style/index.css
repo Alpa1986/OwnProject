@@ -154,7 +154,7 @@ nav li:hover .dropdown {
   gap: 10px;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   width: 60%;
   padding: 5px 10px;
   margin-top: 80px;
@@ -178,37 +178,38 @@ p {
 }
 
 .barbar {
-  margin: 1em 3em ;
+  margin: 0.5em 3em ;
   display: flex;
   text-align: left;
   width: 90%;
   height: 300px;
   flex-direction: row;
-  justify-content: flex-start;
-  grid-column: 1 / span 2;
+  justify-content: flex-end;
+  grid-column: 1 / span 3;
 }
 
 .barbar1 {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  margin: 3.5em;
 }
 
 
 .sorceress {
-  margin: 1em 3em ;
+  margin: 10em 3em ;
   display: flex;
   text-align: left;
   width: 90%;
   height: 300px;
   flex-direction: row;
-  justify-content: flex-start;
-  grid-column: 1 / span 2; 
+  justify-content: flex-end;
+  grid-column: 1 / span 3;; 
 }
 
 .sorceress1 {
   display: flex;
   flex-direction: column;
+  margin: 3.5em;
 }
 
 .druid {

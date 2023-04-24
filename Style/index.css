@@ -12,8 +12,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 24px;
-  font-family: 'Amatic SC', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-family: 'Diablo', sans-serif;
   color: var(--text-color);
 }
 
@@ -23,9 +23,9 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
-  background-image: url(./d4jpeg.jpg);
-  background-repeat: no-repeat;
+  height: 100%;
+  background-image: url(./wallpaper1.png);
+  background-repeat: repeat;
   background-size: cover;
 }
 
@@ -38,17 +38,16 @@ nav {
   box-shadow: 5px 5px 5px rgb(29, 27, 27);
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .logo-conti img {
   margin-left: 20px;
  
-  
-
 }
 
 .logo-conti a {
-  font-family: 'Amatic SC', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Diablo', sans-serif;
   font-weight: bold;
   font-size: 24px;
   color: var(--item-color);
@@ -61,8 +60,7 @@ nav ul {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  list-style: none;
-  
+  list-style: none; 
 }
 
 nav li {
@@ -73,9 +71,12 @@ nav li {
 }
 
 nav li:hover {
-  background-color: var(--item-color);
+  /* background-color: var(--item-color); */
   transition: 0.4s;
   display: block;
+  
+  box-shadow:  0.3em 0.3em 0.9em black;
+  border: 0.1em groove black;
 }
 
 nav ul a {
@@ -89,16 +90,16 @@ nav ul a {
 
 .dropdown {
   height: min-content;
-  width: 150px;
+  width: 170px;
   background-color: var(--backround-color);
   display: none;
   flex-direction: column;
+  justify-content: center;
   position: absolute;
   left: 0;
   top: 60px;
+  /* border-radius: 0 0 10px 10px; */
   box-shadow: 3px 3px 3px rgb(29, 27, 27);
-  
-  
 }
 
 .dropdown li {
@@ -116,8 +117,6 @@ nav li:hover .dropdown {
   display: flex;
 }
 
-
-
 #home_checkbox,
 #products_checkbox,
 #login_checkbox {
@@ -134,6 +133,7 @@ nav li:hover .dropdown {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
  
 }
 
@@ -141,9 +141,11 @@ nav li:hover .dropdown {
     width: 100%;
     height: auto;
     display: block;
+    border: #e40808 5px groove;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
   
 }
-
 
 .main-div {
   display: grid;
@@ -152,7 +154,7 @@ nav li:hover .dropdown {
   gap: 10px;
   justify-content: center;
   flex-direction: column;
-  height: 90vh;
+  height: 100%;
   width: 60%;
   padding: 5px 10px;
   margin-top: 80px;
@@ -161,19 +163,18 @@ nav li:hover .dropdown {
   border-radius: 20px;
   border-top: 1px groove black;
   border-left:  1px groove black;
-  box-shadow: 3px 3px 3px black;
-  
-}
-
-.main-div p{
-  display: block;
-  
+  box-shadow: 3px 3px 3px black; 
 }
 
 h2 {
   margin: 15px;
   font-size: 32px;
   font-weight: bold;
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
 }
 
 .barbar {
@@ -185,12 +186,13 @@ h2 {
   flex-direction: row;
   justify-content: flex-start;
   grid-column: 1 / span 2;
-  /* border: 2px var(--hover-color) groove; */
-  
 }
 
-
-
+.barbar1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 
 
 .sorceress {
@@ -201,11 +203,13 @@ h2 {
   height: 300px;
   flex-direction: row;
   justify-content: flex-start;
-  grid-column: 1 / span 2;
-  
+  grid-column: 1 / span 2; 
 }
 
-
+.sorceress1 {
+  display: flex;
+  flex-direction: column;
+}
 
 .druid {
   margin: 1em 3em ;
@@ -218,7 +222,11 @@ h2 {
   grid-column: 2 / span 2;
 }
 
-
+.druid1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 
 .necromancer {
   margin: 1em 3em ;
@@ -231,7 +239,11 @@ h2 {
   grid-column: 1 / span 2;
 }
 
-
+.necromancer1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 
 .rogue {
   margin: 1em 3em ;
@@ -244,11 +256,15 @@ h2 {
   grid-column: 1 / span 2;
 }
 
+.rogue1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 
-
-.three-class {
+/* .three-class {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+ */
